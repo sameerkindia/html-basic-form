@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="w-full h-full bg-gray-100">
+    <main>
+      <div
+        class="ml-auto mr-auto mt-[50px] px-10 bg-gray-300 box-border shadow-xl w-[500px] h-[700px rounded-md text-gray-600"
+      >
+        <form action="">
+          <div class="border-b-2 border-slate-400 py-6">
+            <h2 class="text-4xl text-center">Registration</h2>
+          </div>
+
+          <div
+            class="flex gap-5 px-5 py-4 text-2xl border-b-2 border-slate-400"
+          >
+            <label class="input-container">
+              <input type="radio" name="gender" value="male" />
+              <span class="checkbox"></span>
+              Persnol
+            </label>
+            <label class="input-container">
+              <input type="radio" name="gender" value="female" />
+              <span class="checkbox"></span>
+              Female
+            </label>
+          </div>
+
+          <div class="flex flex-col gap-4 p-2 border-b-2 border-slate-400 py-6">
+            <label class="flex item-center rounded-lg">
+              <div
+                class="bg-blue-700 py-2 px- text-center text-2xl text-white rounded-l w-14"
+              >
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <input
+                class="w-full pl-4 rounded-r text-xl focus:outline-none focus:border-blue-900 focus:ring-2 ring-inset"
+                type="email"
+                placeholder="Email"
+                name="userEmail"
+              />
+            </label>
+
+            <label class="flex item-center rounded-lg">
+              <div
+                class="bg-blue-700 py-2 text-center text-2xl text-white rounded-l w-14"
+              >
+                <i class="fa-regular fa-user"></i>
+              </div>
+              <input
+                class="w-full pl-4 rounded-r text-xl focus:outline-none focus:border-blue-900 focus:ring-2 ring-inset"
+                type="text"
+                placeholder="Name"
+                name="userName"
+              />
+            </label>
+
+            <label class="flex item-center rounded-lg">
+              <div
+                class="bg-blue-700 py-2 text-center text-2xl text-white rounded-l w-14"
+              >
+                <i class="fa-solid fa-lock-open"></i>
+              </div>
+              <input
+                class="w-full pl-4 rounded-r text-xl focus:outline-none focus:border-blue-900 focus:ring-2 ring-inset"
+                type="password"
+                placeholder="password"
+                name="password"
+              />
+            </label>
+          </div>
+
+          <div class="flex gap-5 p-5 text-2xl border-b-2 border-slate-400">
+            <label class="input-container">
+              <input type="radio" name="gender" value="male" />
+              <span class="checkbox"></span>
+              Male
+            </label>
+            <label class="input-container">
+              <input type="radio" name="gender" value="female" />
+              <span class="checkbox"></span>
+              Female
+            </label>
+          </div>
+
+          <div class="border-b-2 border-slate-400 py-2">
+            <p>
+              By clicking Register, you agree on our
+              <a href="#" class="text-blue-700">Privacy Policy for W3Docs</a>
+            </p>
+          </div>
+          <div class="py-2">
+            <button
+              class="w-full bg-blue-700 text-white p-3 rounded-md font-semibold hover:bg-blue-500"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

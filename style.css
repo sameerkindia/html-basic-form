@@ -1,0 +1,41 @@
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-container input {
+  display: none;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(29, 79, 215);
+  border-radius: 100%;
+}
+
+.checkbox::before {
+  content: "";
+  position: absolute;
+  display: none;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  transform: translate(2.5px, 2.5px);
+}
+
+.input-container:hover .checkbox {
+  background-color: rgba(29, 79, 215, 0.5);
+}
+
+.input-container input:checked ~ .checkbox::before {
+  display: block;
+}
